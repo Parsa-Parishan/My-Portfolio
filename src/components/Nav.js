@@ -22,10 +22,18 @@ export default function Nav() {
       </nav>
       <nav className="vertical">
         <div className="icon">
-          <FaGithub />
-          <FaLinkedin />
-          <FaInstagram />
-          <FaTwitter />
+          <span>
+            <FaGithub />
+          </span>
+          <span>
+            <FaLinkedin />
+          </span>
+          <span>
+            <FaInstagram />
+          </span>
+          <span>
+            <FaTwitter />
+          </span>
         </div>
       </nav>
     </>
