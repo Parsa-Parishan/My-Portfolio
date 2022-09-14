@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import logo from "../images/logo.png";
 
 export default function Nav() {
   return (
@@ -8,7 +9,7 @@ export default function Nav() {
         <div className="horizontal-container">
           <i className="fa-solid fa-xmark close"></i>
           <div className="avatar-logo">
-            <img src="src/Avatar-logo/P.png" alt="Avatar" />
+            <img src={logo} alt="Avatar" />
           </div>
           <div className="links">
             <a href="#">About</a>
