@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 
 export default function Nav() {
   return (
@@ -20,10 +21,10 @@ export default function Nav() {
       </nav>
       <nav className="vertical">
         <div className="icon">
-          <i className="fa-brands fa-github"></i>
-          <i className="fa-brands fa-linkedin"></i>
-          <i className="fa-brands fa-instagram"></i>
-          <i className="fa-brands fa-twitter"></i>
+          <FaGithub />
+          <FaLinkedin />
+          <FaInstagram />
+          <FaTwitter />
         </div>
       </nav>
     </>
