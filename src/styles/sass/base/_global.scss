@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=IM+Fell+Great+Primer:ital@0;1&family=Nothing+You+Could+Do&family=Roboto:wght@100&family=Rock+Salt&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Whisper&display=swap");
+
 body {
   font-family: "Akshar", sans-serif;
   // background: rgb(37, 37, 37);
@@ -16,7 +18,7 @@ body {
 
 .dark-mode {
   position: absolute;
-  right: .5rem;
+  right: 0.5rem;
   top: 2rem;
   font-size: 2rem;
   i {
@@ -42,7 +44,7 @@ body {
 main {
   color: var(--font);
   clear: right;
-  padding-inline: .5rem;
+  padding-inline: 0.5rem;
   @media (min-width: 769px) {
     width: 85vw;
     margin-inline: auto;
@@ -50,67 +52,6 @@ main {
   }
   & > div + div {
     margin-block: 3.5rem;
-  }
-}
-.about-me {
-  text-align: center;
-  display: grid;
-  place-items: center;
-  padding: 1.5rem;
-  height: 100vh;
-  .intro {
-    margin-bottom: 2rem;
-    .greet {
-      color: white;
-      h1 {
-        mix-blend-mode: difference;
-      }
-      position: relative;
-      &::after {
-        content: "";
-        position: absolute;
-        width: 33%;
-        height: 100%;
-        background-color: white;
-        top: 0;
-        z-index: -1;
-        color: black;
-        animation: negative-slider 5s linear infinite;
-        box-shadow: 0px 0px 40px 10px gray;
-        border-radius: 50%;
-        @media (max-width: 768px) {
-          display: none;
-        }
-      }
-    }
-    strong {
-      color: var(--icon);
-    }
-    h1 {
-      font-size: 3rem;
-      font-family: "Shadows Into Light", cursive;
-      font-weight: bold;
-      width: 100%;
-      @media (min-width: 768px) {
-        font-size: 8rem;
-      }
-    }
-    p {
-      font-size: 2rem;
-      color: #4e4e50;
-    }
-  }
-  img {
-    border: 5px dotted;
-    width: 20rem;
-    border-radius: 50%;
-    aspect-ratio: 1;
-  }
-  @media (min-width: 1024px) {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row-reverse;
   }
 }
 
