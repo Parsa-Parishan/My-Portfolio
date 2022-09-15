@@ -1,33 +1,34 @@
 import React from "react";
+import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <>
-      <div class="social-media">
+      <div className="social-media">
         <ul>
-          <li class="media">
+          <li className="media">
             <a href="#">
-              <i class="fa-brands fa-github"></i>
+              <FaGithub />
             </a>
           </li>
-          <li class="media">
+          <li className="media">
             <a href="#">
-              <i class="fa-brands fa-linkedin"></i>
+              <FaLinkedin />
             </a>
           </li>
-          <li class="media">
+          <li className="media">
             <a href="#">
-              <i class="fa-brands fa-instagram"></i>
+              <FaInstagram />
             </a>
           </li>
-          <li class="media">
+          <li className="media">
             <a href="#">
-              <i class="fa-brands fa-twitter"></i>
+              <FaTwitter />
             </a>
           </li>
         </ul>
       </div>
-      <div class="credit">
+      <div className="credit">
         <a href="#">Designed & Built by Parsa Parishan</a>
       </div>
     </>
