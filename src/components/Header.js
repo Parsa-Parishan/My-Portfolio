@@ -4,10 +4,10 @@ import avatar from "../images/avatar.jpeg";
 export default function Header() {
   return (
     <>
-      <div class="about-me">
-        <img src={avatar} alt="avatar" class="my-avatar" />
-        <div class="intro">
-          <div class="greet">
+      <div className="about-me">
+        <img src={avatar} alt="avatar" className="my-avatar" />
+        <div className="intro">
+          <div className="greet">
             <h1>Hi, I'm Parsa,</h1>
           </div>
           <p>
