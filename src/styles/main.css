@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=IM+Fell+Great+Primer:ital@0;1&family=Nothing+You+Could+Do&family=Roboto:wght@100&family=Rock+Salt&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Whisper&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=League+Spartan:wght@100;700&family=Orbitron:wght@400;500;600;700;800;900&family=Outfit:wght@100&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 *,
 *::before,
 *::after {
@@ -509,6 +510,7 @@ menu i:active {
 .about-me .intro p {
   font-size: 2rem;
   color: #4e4e50;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .about-me img {
@@ -557,6 +559,18 @@ main > div + div {
   margin-block: 3.5rem;
 }
 
+main .my-skills h2 {
+  font-family: "League Spartan", sans-serif;
+}
+
+main .my-skills h3 {
+  font-family: "League Spartan", sans-serif;
+}
+
+main .my-skills p {
+  font-family: "League Spartan", sans-serif;
+}
+
 main .my-portfolio {
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
@@ -564,10 +578,12 @@ main .my-portfolio {
 
 main .my-portfolio h2 {
   font-size: 3rem;
+  font-family: "League Spartan", sans-serif;
 }
 
 main .my-portfolio p {
   line-height: 1.4;
+  font-family: "League Spartan", sans-serif;
 }
 
 main .my-portfolio .container {
@@ -610,6 +626,7 @@ main .my-portfolio .container {
 main .my-portfolio .container article {
   border: 1px solid yellow;
   position: relative;
+  font-family: "Orbitron", sans-serif;
 }
 
 main .my-portfolio .container article .about-project {
@@ -651,5 +668,55 @@ main .my-portfolio .container article .about-project .btns button:hover * {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
+}
+
+footer {
+  margin-block: 3rem;
+}
+
+footer div.social-media ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer div.social-media ul li a {
+  font-size: 1.75rem;
+  color: #6f2232;
+}
+
+footer div.social-media ul li a:hover {
+  color: var(--hover);
+  -webkit-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
+}
+
+footer div.social-media ul li + li {
+  margin-left: 3rem;
+}
+
+@media (min-width: 769px) {
+  footer div.social-media {
+    display: none;
+  }
+}
+
+footer div.credit {
+  text-align: center;
+}
+
+footer div.credit a {
+  color: #4e4e50;
+  text-decoration: none;
+}
+
+footer div.credit a:hover {
+  color: var(--hover);
 }
 /*# sourceMappingURL=main.css.map */

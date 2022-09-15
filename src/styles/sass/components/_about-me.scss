@@ -14,12 +14,25 @@ main {
   }
   position: relative;
   z-index: 1;
+  .my-skills {
+    h2 {
+      font-family: "League Spartan", sans-serif;
+    }
+    h3 {
+      font-family: "League Spartan", sans-serif;
+    }
+    p {
+      font-family: "League Spartan", sans-serif;
+    }
+  }
   .my-portfolio {
     h2 {
       font-size: 3rem;
+      font-family: "League Spartan", sans-serif;
     }
     p {
       line-height: 1.4;
+      font-family: "League Spartan", sans-serif;
     }
     // transform: translateY(150px);
     // opacity: 0;
@@ -48,6 +61,7 @@ main {
       article {
         border: 1px solid yellow;
         position: relative;
+        font-family: "Orbitron", sans-serif;
         .about-project {
           position: absolute;
           padding: 0.5rem;
