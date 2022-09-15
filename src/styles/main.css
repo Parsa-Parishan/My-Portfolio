@@ -234,50 +234,15 @@ body #root .App {
   }
 }
 
-menu {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  margin: 0;
-  padding: 0;
-  z-index: 2;
-}
-
-menu i {
-  float: right;
-  font-size: 1.5rem;
-  cursor: pointer;
-  position: relative;
-  z-index: 1;
-}
-
-menu i:hover {
-  color: #ff3333;
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-}
-
-menu i:active {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
-}
-
-@media (min-width: 769px) {
-  menu {
-    display: none;
-  }
-}
-
 .horizontal {
   width: 100%;
   padding: 10px 15px;
-  top: 0;
+  top: -100px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   position: fixed;
   z-index: 2;
+  font-family: "League Spartan", sans-serif;
 }
 
 .horizontal .horizontal-container {
@@ -337,7 +302,7 @@ menu i:active {
     top: 0;
     opacity: 0;
     display: none;
-    z-index: 1;
+    z-index: 2;
     -webkit-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
   }
@@ -430,8 +395,9 @@ menu i:active {
 .show {
   opacity: 1;
   display: block;
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  background-color: rgba(26, 26, 29, 0.5);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 
 .slide {
@@ -439,11 +405,47 @@ menu i:active {
           transform: translateX(0) !important;
 }
 
+.slide-back {
+  -webkit-transform: translateX(100%) !important;
+          transform: translateX(100%) !important;
+}
+
+@media (min-width: 768px) {
+  .slide-back {
+    -webkit-transform: translateX(0) !important;
+            transform: translateX(0) !important;
+  }
+}
+
 .blur {
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  -webkit-box-shadow: 0 5px 5px 0;
-          box-shadow: 0 5px 5px 0;
+  background-color: rgba(26, 26, 29, 0.5);
+  top: -2px !important;
+  -webkit-box-shadow: 0 3px 5px 0 black;
+          box-shadow: 0 3px 5px 0 black;
+}
+
+.bar {
+  color: var(--font);
+  position: absolute;
+  right: 0.5rem;
+  top: 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+  z-index: 3;
+}
+
+.bar:hover {
+  color: var(--hover);
+}
+
+@media (min-width: 768px) {
+  .bar {
+    display: none;
+  }
 }
 
 .about-me {

@@ -1,42 +1,16 @@
-menu {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  margin: 0;
-  padding: 0;
-  z-index: 2;
-  i {
-    float: right;
-    font-size: 1.5rem;
-
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    &:hover {
-      color: #ff3333;
-      transition: all 0.25s ease-in-out;
-    }
-    &:active {
-      transform: rotate(180deg);
-      transition: all 0.1s ease-in-out;
-    }
-  }
-  @media (min-width: 769px) {
-    display: none;
-  }
-}
-
 .horizontal {
   width: 100%;
   padding: 10px 15px;
-  top: 0;
+  top: -100px;
   transition: all 0.2s ease-in-out;
   position: fixed;
   z-index: 2;
+  font-family: "League Spartan", sans-serif;
   .horizontal-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     img {
       width: 3rem;
       margin-left: 1rem;
@@ -74,7 +48,7 @@ menu {
     top: 0;
     opacity: 0;
     display: none;
-    z-index: 1;
+    z-index: 2;
     transition: all 0.5s ease-in;
     .horizontal-container {
       position: absolute;
@@ -138,7 +112,8 @@ menu {
 .show {
   opacity: 1;
   display: block;
-  backdrop-filter: blur(15px);
+  background-color: rgba(#1a1a1d, 0.5);
+  backdrop-filter: blur(20px);
   // .horizontal-container {
   //   transform: translateX(0);
   // }
@@ -148,7 +123,33 @@ menu {
   transform: translateX(0) !important;
 }
 
+.slide-back {
+  transform: translateX(100%) !important;
+  @media (min-width: 768px) {
+    transform: translateX(0) !important;
+  }
+}
+
 .blur {
   backdrop-filter: blur(15px);
-  box-shadow: 0 5px 5px 0;
+  background-color: rgba(#1a1a1d, 0.5);
+  top: -2px !important;
+  box-shadow: 0 3px 5px 0 black;
+}
+
+.bar {
+  color: var(--font);
+  position: absolute;
+  right: 0.5rem;
+  top: 1rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all 0.15s linear;
+  z-index: 3;
+  &:hover {
+    color: var(--hover);
+  }
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
