@@ -1,13 +1,34 @@
-import React from "react";
-import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import React, { useState } from "react";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaRegEnvelope,
+} from "react-icons/fa";
 import logo from "../images/logo.png";
 
-export default function Nav() {
+export default function Nav({ open, slide }) {
+  const [showNav, setShowNav] = useState(true);
+  const [prev, setPrev] = useState(0);
+
+  const navOnScroll = () => {
+    let current = window.pageYOffset;
+    setPrev(() => window.pageYOffset);
+    if (current > prev && current > 100) {
+      setShowNav(() => false);
+    } else if (current < prev || current == 0) {
+      setShowNav(() => true);
+    }
+  };
+
+  window.addEventListener("scroll", navOnScroll);
+
   return (
     <>
-      <nav className="horizontal">
-        <div className="horizontal-container">
-          <i className="fa-solid fa-xmark close"></i>
+      <nav className={`horizontal ${open && "show"} ${showNav && "blur"}`}>
+        <div
+          className={`horizontal-container ${slide ? "slide" : "slide-back"}`}
+        >
           <div className="avatar-logo">
             <img src={logo} alt="Avatar" />
           </div>
@@ -32,7 +53,7 @@ export default function Nav() {
             <FaInstagram />
           </span>
           <span>
-            <FaTwitter />
+            <FaRegEnvelope />
           </span>
         </div>
       </nav>
