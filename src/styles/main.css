@@ -127,6 +127,18 @@ body {
   font-family: "Akshar", sans-serif;
   background-color: var(--background-color);
   background-attachment: fixed;
+  position: relative;
+  z-index: 0;
+}
+
+body #root {
+  position: relative;
+  z-index: 0;
+}
+
+body #root .App {
+  position: relative;
+  z-index: 0;
 }
 
 .dark-mode {
@@ -160,49 +172,23 @@ body {
   }
 }
 
-main {
-  color: var(--font);
-  clear: right;
-  padding-inline: 0.5rem;
+:root {
+  --background-color: #1a1a1d;
+  --nav-background: #1a1a1d;
+  --nav-font: #4e4e50;
+  --icon: #c3073f;
+  --font: #f4f4f4;
+  --hover: #f60950;
+  --item-background: #c3073f;
 }
 
-@media (min-width: 769px) {
-  main {
-    width: 85vw;
-    margin-inline: auto;
-    margin-top: calc(68px + 0.5rem);
-  }
-}
-
-main > div + div {
-  margin-block: 3.5rem;
-}
-
-.my_portfolio {
-  -webkit-transform: translateY(150px);
-          transform: translateY(150px);
-  opacity: 0;
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
-}
-
-.my_portfolio h2 {
-  font-size: 3rem;
-}
-
-.my_portfolio p {
-  line-height: 1.4;
-}
-
-.modal {
-  position: fixed;
-  overflow: hidden;
-}
-
-.active {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  opacity: 1;
+.light-theme {
+  --background-color: #dcd7c9;
+  --nav-background: #a27b5c;
+  --nav-font: #2c3639;
+  --icon: #2c3639;
+  --font: #5f7161;
+  --hover: #809a6f;
 }
 
 @-webkit-keyframes negative-slider {
@@ -245,25 +231,6 @@ main > div + div {
     left: 0;
     border-radius: 0 40px 40px 0;
   }
-}
-
-:root {
-  --background-color: #1a1a1d;
-  --nav-background: #1a1a1d;
-  --nav-font: #4e4e50;
-  --icon: #c3073f;
-  --font: #f4f4f4;
-  --hover: #f60950;
-  --item-background: #c3073f;
-}
-
-.light-theme {
-  --background-color: #dcd7c9;
-  --nav-background: #a27b5c;
-  --nav-font: #2c3639;
-  --icon: #2c3639;
-  --font: #5f7161;
-  --hover: #809a6f;
 }
 
 menu {
@@ -414,6 +381,7 @@ menu i:active {
   position: fixed;
   left: calc(1rem + 5px);
   bottom: 9rem;
+  z-index: 2;
 }
 
 .vertical .icon {
@@ -565,5 +533,123 @@ menu i:active {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
+}
+
+main {
+  color: var(--font);
+  clear: right;
+  padding-inline: 0.5rem;
+  position: relative;
+  z-index: 1;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 769px) {
+  main {
+    width: 85vw;
+    margin-inline: auto;
+    margin-top: calc(68px + 0.5rem);
+  }
+}
+
+main > div + div {
+  margin-block: 3.5rem;
+}
+
+main .my-portfolio {
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+main .my-portfolio h2 {
+  font-size: 3rem;
+}
+
+main .my-portfolio p {
+  line-height: 1.4;
+}
+
+main .my-portfolio .container {
+  margin-block: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+@media (min-width: 500px) {
+  main .my-portfolio .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  main .my-portfolio .container .weather {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  main .my-portfolio .container .note {
+    grid-column: 3 / -1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  main .my-portfolio .container .ecommerce {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
+    grid-row: 2 / -1;
+  }
+}
+
+main .my-portfolio .container article {
+  border: 1px solid yellow;
+  position: relative;
+}
+
+main .my-portfolio .container article .about-project {
+  position: absolute;
+  padding: 0.5rem;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+main .my-portfolio .container article .about-project .btns {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+}
+
+main .my-portfolio .container article .about-project .btns button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+main .my-portfolio .container article .about-project .btns button:hover {
+  color: var(--hover);
+}
+
+main .my-portfolio .container article .about-project .btns button:hover * {
+  color: var(--hover);
+}
+
+.modal {
+  position: fixed;
+  overflow: hidden;
+}
+
+.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
