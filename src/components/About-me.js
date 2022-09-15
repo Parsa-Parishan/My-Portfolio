@@ -7,7 +7,7 @@ import ecom from "../images/screenshots/ecom.png";
 export default function About() {
   return (
     <>
-      <div className="my-skills">
+      <div className="my-skills" id="about-me">
         <h2>About me</h2>
         <div className="my-info">
           <h3>Hello!</h3>

@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <Nav open={open} slide={slide} />
+      <Nav open={open} slide={slide} openModal={openModal} />
       <header>
         {!open ? (
           <FaBars className="bar" onClick={openModal} />

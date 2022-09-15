@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import logo from "../images/logo.png";
 
-export default function Nav({ open, slide }) {
+export default function Nav({ open, slide, openModal }) {
   const [showNav, setShowNav] = useState(true);
   const [prev, setPrev] = useState(0);
 
@@ -33,11 +33,21 @@ export default function Nav({ open, slide }) {
             <img src={logo} alt="Avatar" />
           </div>
           <div className="links">
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#" className="resume">
-              Resume
-            </a>
+            <ul>
+              <li
+                onClick={() =>
+                  document
+                    .querySelector("#about-me")
+                    .scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                About
+              </li>
+              <li href="#">Contact</li>
+              <li href="#" className="resume">
+                Resume
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
