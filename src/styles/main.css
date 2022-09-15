@@ -296,7 +296,7 @@ body #root .App {
 
 @media (max-width: 768px) {
   .horizontal {
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -305,6 +305,7 @@ body #root .App {
     z-index: 2;
     -webkit-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
+    overflow: hidden;
   }
   .horizontal .horizontal-container {
     position: absolute;
@@ -428,7 +429,7 @@ body #root .App {
 
 .bar {
   color: var(--font);
-  position: absolute;
+  position: fixed;
   right: 0.5rem;
   top: 1rem;
   font-size: 1.25rem;
