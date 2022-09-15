@@ -20,12 +20,15 @@
     .close {
       display: none;
     }
-    .links > a {
+    .links > ul > li {
       margin-inline: 20px;
       font-size: 1.25rem;
       text-decoration: none;
       padding: 10px;
       color: var(--font);
+      list-style: none;
+      display: inline;
+      cursor: pointer;
       &:hover {
         color: var(--hover);
         transition: color 0.15s linear;
@@ -38,6 +41,9 @@
           background-color: rgba(#f60950, 0.25);
           transition: background-color 0.15s linear;
         }
+      }
+      @media (max-width: 768px) {
+        display: block;
       }
     }
   }

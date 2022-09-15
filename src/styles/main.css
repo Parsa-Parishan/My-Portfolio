@@ -268,30 +268,39 @@ body #root .App {
   display: none;
 }
 
-.horizontal .horizontal-container .links > a {
+.horizontal .horizontal-container .links > ul > li {
   margin-inline: 20px;
   font-size: 1.25rem;
   text-decoration: none;
   padding: 10px;
   color: var(--font);
+  list-style: none;
+  display: inline;
+  cursor: pointer;
 }
 
-.horizontal .horizontal-container .links > a:hover {
+.horizontal .horizontal-container .links > ul > li:hover {
   color: var(--hover);
   -webkit-transition: color 0.15s linear;
   transition: color 0.15s linear;
 }
 
-.horizontal .horizontal-container .links > a.resume {
+.horizontal .horizontal-container .links > ul > li.resume {
   border: 1px solid;
   border-radius: 10px;
   color: var(--hover);
 }
 
-.horizontal .horizontal-container .links > a.resume:hover {
+.horizontal .horizontal-container .links > ul > li.resume:hover {
   background-color: rgba(246, 9, 80, 0.25);
   -webkit-transition: background-color 0.15s linear;
   transition: background-color 0.15s linear;
+}
+
+@media (max-width: 768px) {
+  .horizontal .horizontal-container .links > ul > li {
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {
