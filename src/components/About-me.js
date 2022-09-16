@@ -30,17 +30,32 @@ export default function About() {
             <div className="about-project">
               <h3>Current weather/forecast app</h3>
               <p>
-                about the project about the project about the project about the
-                project about the project about the project about the project
-                about the project about the project about the project about the
-                project about the project.
+                A web app for weather. A paginate search bar with city
+                recommendations, search for a city, view a full detailed current
+                weather along with the forecast and a dynamic background based
+                on weather
               </p>
+              <span>
+                <ul>
+                  <li>HTML/CSS</li>
+                  <li>JavaScript</li>
+                  <li>React js</li>
+                  <li>Weather API</li>
+                  <li>geo API</li>
+                  <li>SASS</li>
+                </ul>
+              </span>
               <div className="btns">
                 <button>
-                  <a hre="#">Live</a>
+                  <a href="https://parsa-parishan.github.io/My-Weather-App/">
+                    Live
+                  </a>
                 </button>
                 <button>
-                  <a href="#" className="icon">
+                  <a
+                    href="https://github.com/Parsa-Parishan/My-Weather-App"
+                    className="icon"
+                  >
                     <FaGithub style={{ color: "white" }} />
                   </a>
                 </button>
@@ -55,17 +70,26 @@ export default function About() {
             <div className="about-project">
               <h3>Note taking app</h3>
               <p>
-                about the project about the project about the project about the
-                project about the project about the project about the project
-                about the project about the project about the project about the
-                project about the project.
+                A note taking app. Just a simple note taking app I created using
+                React js and number of React packages to make editable notes.
               </p>
+              <span>
+                <ul>
+                  <li>HTML/CSS</li>
+                  <li>JavaScript</li>
+                  <li>React js</li>
+                  <li>React Responsive Modal</li>
+                </ul>
+              </span>
               <div className="btns">
                 <button>
-                  <a hre="#">Live</a>
+                  <a href="https://parsa-parishan.github.io/Note-App/">Live</a>
                 </button>
                 <button>
-                  <a href="#" className="icon">
+                  <a
+                    href="https://github.com/Parsa-Parishan/Note-App"
+                    className="icon"
+                  >
                     <FaGithub style={{ color: "white" }} />
                   </a>
                 </button>
@@ -87,10 +111,13 @@ export default function About() {
               </p>
               <div className="btns">
                 <button>
-                  <a hre="#">Live</a>
+                  <a href="https://parsa-parishan.github.io/my-shop/">Live</a>
                 </button>
                 <button>
-                  <a href="#" className="icon">
+                  <a
+                    href="https://github.com/Parsa-Parishan/my-shop"
+                    className="icon"
+                  >
                     <FaGithub style={{ color: "white" }} />
                   </a>
                 </button>

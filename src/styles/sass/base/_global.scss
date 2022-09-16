@@ -42,3 +42,10 @@ body {
     display: none;
   }
 }
+
+a {
+  &:visited {
+    color: inherit;
+  }
+  text-decoration: none;
+}

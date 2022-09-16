@@ -173,6 +173,14 @@ body #root .App {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
 :root {
   --background-color: #1a1a1d;
   --nav-background: #1a1a1d;
@@ -626,6 +634,24 @@ main .my-portfolio .container article .about-project {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
+}
+
+main .my-portfolio .container article .about-project span ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+main .my-portfolio .container article .about-project span ul li {
+  color: #c3073f;
+  font-size: 0.6rem;
+  border: 1px solid darkgray;
+  padding: 5px;
+  border-radius: 20px;
 }
 
 main .my-portfolio .container article .about-project .btns {
