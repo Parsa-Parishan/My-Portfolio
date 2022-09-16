@@ -29,7 +29,9 @@ export default function Footer() {
         </ul>
       </div>
       <div className="credit">
-        <a href="#">Designed & Built by Parsa Parishan</a>
+        <a href="https://github.com/Parsa-Parishan">
+          Designed & Built by Parsa Parishan
+        </a>
       </div>
     </>
   );

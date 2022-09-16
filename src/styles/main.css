@@ -632,6 +632,7 @@ main .my-portfolio .container article .about-project {
   width: 100%;
   height: 100%;
   color: #4e4e50;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 main .my-portfolio .container article .about-project h3 {
@@ -640,7 +641,6 @@ main .my-portfolio .container article .about-project h3 {
 
 main .my-portfolio .container article .about-project p {
   margin-top: 2rem;
-  background: rgba(0, 0, 0, 0.8);
   padding: 0.5rem;
   border-radius: 10px;
 }
@@ -718,6 +718,13 @@ main .my-portfolio .container article .about-project .btns button:hover * {
     position: relative;
     z-index: 3;
     margin-left: 1.5rem;
+    background: none;
+  }
+  main .my-portfolio .container article .about-project p {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  main .my-portfolio .container article .about-project p a:hover {
+    color: #c3073f;
   }
   main .my-portfolio .container article .image {
     grid-column: 3 / -1;

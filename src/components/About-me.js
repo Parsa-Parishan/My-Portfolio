@@ -20,10 +20,10 @@ export default function About() {
         </div>
       </div>
       <div className="my-portfolio">
-        <h2>My Portfolio</h2>
+        <h2>Projects I've built</h2>
         <p>
-          A small gallery of my projects I built in my journey if learning to
-          code
+          A small gallery of my personal projects I built on my journey of
+          learning to code
         </p>
         <div className="container">
           <article className="project weather">
@@ -104,11 +104,20 @@ export default function About() {
             <div className="about-project">
               <h3>Ecommerce website</h3>
               <p>
-                about the project about the project about the project about the
-                project about the project about the project about the project
-                about the project about the project about the project about the
-                project about the project.
+                I built a ecommerce website for vintage clothes with React-js
+                and React-router. I got the data from one of my favorite
+                websites <a href="https://madeworn.com/">madeworn</a>. I used
+                framer-motion for transition between components.
               </p>
+              <span>
+                <ul>
+                  <li>HTML/CSS</li>
+                  <li>JavaScript</li>
+                  <li>React js</li>
+                  <li>React-router</li>
+                  <li>Framer-motion</li>
+                </ul>
+              </span>
               <div className="btns">
                 <button>
                   <a href="https://parsa-parishan.github.io/my-shop/">Live</a>
