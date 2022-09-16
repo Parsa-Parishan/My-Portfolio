@@ -46,7 +46,10 @@ export default function About() {
                 </button>
               </div>
             </div>
-            <img src={weather} alt="weather app" />
+            <div className="image">
+              <div className="filter"></div>
+              <img src={weather} alt="weather app" />
+            </div>
           </article>
           <article className="project note">
             <div className="about-project">
@@ -68,7 +71,10 @@ export default function About() {
                 </button>
               </div>
             </div>
-            <img src={note} alt="note taking app" />
+            <div className="image">
+              <div className="filter"></div>
+              <img src={note} alt="note taking app" />
+            </div>
           </article>
           <article className="project ecommerce">
             <div className="about-project">
@@ -90,7 +96,10 @@ export default function About() {
                 </button>
               </div>
             </div>
-            <img src={ecom} alt="ecommerce website" />
+            <div className="image">
+              <div className="filter"></div>
+              <img src={ecom} alt="ecommerce website" />
+            </div>
           </article>
         </div>
       </div>

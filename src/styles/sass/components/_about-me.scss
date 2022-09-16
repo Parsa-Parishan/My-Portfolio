@@ -7,7 +7,6 @@ main {
   @media (min-width: 769px) {
     width: 85vw;
     margin-inline: auto;
-    margin-top: calc(68px + 0.5rem);
   }
   & > div + div {
     margin-block: 3.5rem;
@@ -39,29 +38,19 @@ main {
     transition: all 2s ease;
     .container {
       margin-block: 1.5rem;
-      padding: 0.5rem 1rem;
-      @media (min-width: 500px) {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 0.5rem;
-        .weather {
-          grid-column: 1 / 3;
-          grid-row: 1 / 2;
-        }
-        .note {
-          grid-column: 3 / -1;
-          grid-row: 1 / 2;
-        }
-        .ecommerce {
-          grid-column: 2 / 4;
-          grid-row: 2 / -1;
-        }
-      }
+      padding: 0.5rem 3rem;
+      display: grid;
+      gap: 1rem;
+      grid-template-rows: repeat(3, 20rem);
       article {
-        border: 1px solid yellow;
         position: relative;
         font-family: "Orbitron", sans-serif;
+        .image {
+          height: 100%;
+          img {
+            height: 100%;
+          }
+        }
         .about-project {
           position: absolute;
           padding: 0.5rem;
@@ -84,6 +73,57 @@ main {
                   color: var(--hover);
                 }
               }
+            }
+          }
+        }
+      }
+      @media (min-width: 768px) {
+        grid-template-rows: repeat(3, 30rem);
+        gap: 2.5rem;
+        article {
+          display: grid;
+          grid-template-columns: repeat(7, 1fr);
+          grid-template-rows: repeat(5, 1fr);
+          position: relative;
+          padding: 0.5rem;
+          z-index: 1;
+          .about-project {
+            grid-column: 1 / 4;
+            grid-row: 2 / 5;
+            border-radius: 5px;
+            position: relative;
+            z-index: 3;
+            margin-left: 1.5rem;
+          }
+          .image {
+            grid-column: 3 / -1;
+            grid-row: 1 / -1;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+            transition: all 0.3s ease;
+            .filter {
+              position: absolute;
+              inset: 0 0 0 0;
+              background-color: rgba(#c3073f, 0.5);
+              transition: all 0.3s ease 0.15s;
+            }
+            img {
+              width: 100%;
+            }
+            &:hover {
+              z-index: 4;
+              .filter {
+                background-color: rgba(#c3073f, 0);
+              }
+            }
+          }
+          &.note {
+            .about-project {
+              grid-column: 5 / 8;
+            }
+            .image {
+              grid-column: 1 / 6;
             }
           }
         }

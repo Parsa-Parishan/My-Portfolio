@@ -430,8 +430,8 @@ body #root .App {
 .blur {
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
-  background-color: rgba(26, 26, 29, 0.5);
-  top: -2px !important;
+  background-color: rgba(26, 26, 29, 0.9);
+  top: -3px !important;
   -webkit-box-shadow: 0 3px 5px 0 black;
           box-shadow: 0 3px 5px 0 black;
 }
@@ -563,7 +563,6 @@ main {
   main {
     width: 85vw;
     margin-inline: auto;
-    margin-top: calc(68px + 0.5rem);
   }
 }
 
@@ -600,45 +599,25 @@ main .my-portfolio p {
 
 main .my-portfolio .container {
   margin-block: 1.5rem;
-  padding: 0.5rem 1rem;
-}
-
-@media (min-width: 500px) {
-  main .my-portfolio .container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
-    gap: 0.5rem;
-  }
-  main .my-portfolio .container .weather {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1 / 3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
-  }
-  main .my-portfolio .container .note {
-    grid-column: 3 / -1;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
-  }
-  main .my-portfolio .container .ecommerce {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2 / 4;
-    grid-row: 2 / -1;
-  }
+  padding: 0.5rem 3rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -ms-grid-rows: (20rem)[3];
+      grid-template-rows: repeat(3, 20rem);
 }
 
 main .my-portfolio .container article {
-  border: 1px solid yellow;
   position: relative;
   font-family: "Orbitron", sans-serif;
+}
+
+main .my-portfolio .container article .image {
+  height: 100%;
+}
+
+main .my-portfolio .container article .image img {
+  height: 100%;
 }
 
 main .my-portfolio .container article .about-project {
@@ -669,6 +648,72 @@ main .my-portfolio .container article .about-project .btns button:hover {
 
 main .my-portfolio .container article .about-project .btns button:hover * {
   color: var(--hover);
+}
+
+@media (min-width: 768px) {
+  main .my-portfolio .container {
+    -ms-grid-rows: (30rem)[3];
+        grid-template-rows: repeat(3, 30rem);
+    gap: 2.5rem;
+  }
+  main .my-portfolio .container article {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[7];
+        grid-template-columns: repeat(7, 1fr);
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+    position: relative;
+    padding: 0.5rem;
+    z-index: 1;
+  }
+  main .my-portfolio .container article .about-project {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / 4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    grid-row: 2 / 5;
+    border-radius: 5px;
+    position: relative;
+    z-index: 3;
+    margin-left: 1.5rem;
+  }
+  main .my-portfolio .container article .image {
+    grid-column: 3 / -1;
+    grid-row: 1 / -1;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  main .my-portfolio .container article .image .filter {
+    position: absolute;
+    inset: 0 0 0 0;
+    background-color: rgba(195, 7, 63, 0.5);
+    -webkit-transition: all 0.3s ease 0.15s;
+    transition: all 0.3s ease 0.15s;
+  }
+  main .my-portfolio .container article .image img {
+    width: 100%;
+  }
+  main .my-portfolio .container article .image:hover {
+    z-index: 4;
+  }
+  main .my-portfolio .container article .image:hover .filter {
+    background-color: rgba(195, 7, 63, 0);
+  }
+  main .my-portfolio .container article.note .about-project {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-column: 5 / 8;
+  }
+  main .my-portfolio .container article.note .image {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / 6;
+  }
 }
 
 .modal {
