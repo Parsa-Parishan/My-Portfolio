@@ -1,5 +1,10 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaInstagram,
+  FaRegEnvelope,
+} from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -7,7 +12,7 @@ export default function Footer() {
       <div className="social-media">
         <ul>
           <li className="media">
-            <a href="#">
+            <a href="https://github.com/Parsa-Parishan">
               <FaGithub />
             </a>
           </li>
@@ -17,13 +22,13 @@ export default function Footer() {
             </a>
           </li>
           <li className="media">
-            <a href="#">
+            <a href="https://www.instagram.com/parsa_parishan/">
               <FaInstagram />
             </a>
           </li>
           <li className="media">
-            <a href="#">
-              <FaTwitter />
+            <a href="mailto:parsa.parishan2017@gmail.com">
+              <FaRegEnvelope />
             </a>
           </li>
         </ul>

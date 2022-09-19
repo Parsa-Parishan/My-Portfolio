@@ -395,6 +395,14 @@ a:visited {
   transition: all 0.15s ease-in-out;
 }
 
+.vertical .icon span a {
+  color: var(--nav-font);
+}
+
+.vertical .icon span a:visited {
+  color: var(--nav-font);
+}
+
 .vertical::after {
   content: "";
   position: absolute;

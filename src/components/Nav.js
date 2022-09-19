@@ -54,16 +54,22 @@ export default function Nav({ open, slide, openModal }) {
       <nav className="vertical">
         <div className="icon">
           <span>
-            <FaGithub />
+            <a href="https://github.com/Parsa-Parishan">
+              <FaGithub />
+            </a>
           </span>
           <span>
             <FaLinkedin />
           </span>
           <span>
-            <FaInstagram />
+            <a href="https://www.instagram.com/parsa_parishan/">
+              <FaInstagram />
+            </a>
           </span>
           <span>
-            <FaRegEnvelope />
+            <a href="mailto:parsa.parishan2017@gmail.com">
+              <FaRegEnvelope />
+            </a>
           </span>
         </div>
       </nav>

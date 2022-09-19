@@ -99,6 +99,12 @@
         transform: translateY(-0.3rem);
         transition: all 0.15s ease-in-out;
       }
+      a {
+        color: var(--nav-font);
+        &:visited {
+          color: var(--nav-font);
+        }
+      }
     }
   }
   &::after {
