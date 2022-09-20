@@ -676,6 +676,12 @@ main .my-portfolio .container article .about-project span ul li {
   border-radius: 20px;
 }
 
+@media (min-width: 768px) {
+  main .my-portfolio .container article .about-project span ul {
+    margin-top: 2rem;
+  }
+}
+
 main .my-portfolio .container article .about-project .btns {
   position: absolute;
   bottom: 3px;
@@ -733,6 +739,12 @@ main .my-portfolio .container article .about-project .btns button:hover * {
   }
   main .my-portfolio .container article .about-project p a:hover {
     color: #c3073f;
+  }
+  main .my-portfolio .container article .about-project span {
+    position: relative;
+  }
+  main .my-portfolio .container article .about-project .btns {
+    position: relative;
   }
   main .my-portfolio .container article .image {
     grid-column: 3 / -1;

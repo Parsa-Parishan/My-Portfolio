@@ -81,6 +81,9 @@ main {
                 padding: 5px;
                 border-radius: 20px;
               }
+              @media (min-width: 768px) {
+                margin-top: 2rem;
+              }
             }
           }
           .btns {
@@ -99,6 +102,9 @@ main {
                   color: var(--hover);
                 }
               }
+            }
+            @media (min-width: 768px) {
+
             }
           }
         }
@@ -126,6 +132,12 @@ main {
               a:hover {
                 color: #c3073f;
               }
+            }
+            span {
+              position: relative;
+            }
+            .btns {
+              position: relative;
             }
           }
           .image {
