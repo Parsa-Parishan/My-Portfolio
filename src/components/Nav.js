@@ -23,6 +23,11 @@ export default function Nav({ open, slide, openModal }) {
 
   window.addEventListener("scroll", navOnScroll);
 
+  const scrollTo = (e) => {
+    openModal();
+    document.querySelector(`${e}`).scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <nav className={`horizontal ${open && "show"} ${showNav && "blur"}`}>
@@ -34,16 +39,8 @@ export default function Nav({ open, slide, openModal }) {
           </div>
           <div className="links">
             <ul>
-              <li
-                onClick={() =>
-                  document
-                    .querySelector("#about-me")
-                    .scrollIntoView({ behavior: "smooth" })
-                }
-              >
-                About
-              </li>
-              <li href="#">Contact</li>
+              <li onClick={() => scrollTo("#about-me")}>About</li>
+              <li onClick={() => scrollTo("#contact")}>Contact</li>
               <li href="#" className="resume">
                 Resume
               </li>

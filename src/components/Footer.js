@@ -33,6 +33,10 @@ export default function Footer() {
           </li>
         </ul>
       </div>
+      <div className="contact" id="contact">
+        <h2>Get in Touch</h2>
+        <a href="mailto:parsa.parishan2017@gmail.com">Say Hello</a>
+      </div>
       <div className="credit">
         <a href="https://github.com/Parsa-Parishan">
           Designed & Built by Parsa Parishan

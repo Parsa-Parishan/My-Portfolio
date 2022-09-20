@@ -33,4 +33,27 @@ footer {
       }
     }
   }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-block: 1.5rem;
+    h2 {
+      color: white;
+    }
+    a {
+      border: 1px solid black;
+      width: fit-content;
+      border: 1px solid;
+      border-radius: 10px;
+      color: var(--hover);
+      padding: 1rem 2rem;
+      &:hover {
+        background-color: rgba(#f60950, 0.25);
+        transition: background-color 0.15s linear;
+      }
+    }
+  }
 }
