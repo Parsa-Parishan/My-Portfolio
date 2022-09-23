@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import logo from "../images/logo.png";
 
-export default function Nav({ open, slide, openModal }) {
+export default function Nav({ open, slide, func, openModal }) {
   const [showNav, setShowNav] = useState(true);
   const [prev, setPrev] = useState(0);
 
@@ -25,6 +25,10 @@ export default function Nav({ open, slide, openModal }) {
 
   const scrollTo = (e) => {
     openModal();
+    setTimeout(() => {
+      func(() => false);
+    }, 200);
+
     document.querySelector(`${e}`).scrollIntoView({ behavior: "smooth" });
   };
 
