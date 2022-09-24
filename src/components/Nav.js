@@ -6,6 +6,7 @@ import {
   FaRegEnvelope,
 } from "react-icons/fa";
 import logo from "../images/logo.png";
+import Resume from "../resume/Resume.pdf";
 
 export default function Nav({ open, slide, func, openModal }) {
   const [showNav, setShowNav] = useState(true);
@@ -45,8 +46,10 @@ export default function Nav({ open, slide, func, openModal }) {
             <ul>
               <li onClick={() => scrollTo("#about-me")}>About</li>
               <li onClick={() => scrollTo("#contact")}>Contact</li>
-              <li href="#" className="resume">
-                Resume
+              <li className="resume">
+                <a href={Resume} target="_blank">
+                  Resume
+                </a>
               </li>
             </ul>
           </div>
