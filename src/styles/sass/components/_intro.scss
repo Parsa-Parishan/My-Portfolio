@@ -14,12 +14,12 @@
         text-align: left;
         width: fit-content;
         // font-family: "Nothing You Could Do", cursive;
-        font-family: 'Kaushan Script', cursive;
-        color: #950740;
+        font-family: "Kaushan Script", cursive;
+        color: var(--greet-h1);
         span {
           font-family: "League Spartan", sans-serif;
-          text-decoration: underline #c3073f;
-          color: white;
+          text-decoration: underline var(--greet-span);
+          color: var(--h3);
         }
       }
       position: relative;
@@ -54,7 +54,7 @@
     }
     p {
       font-size: 2rem;
-      color: #4e4e50;
+      color: var(--greet-p);
       font-family: "Orbitron", sans-serif;
     }
   }

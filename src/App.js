@@ -3,11 +3,12 @@ import Nav from "./components/Nav";
 import Header from "./components/Header";
 import About from "./components/About-me";
 import Footer from "./components/Footer";
-import { FaBars, FaRegTimesCircle } from "react-icons/fa";
+import { FaBars, FaRegTimesCircle, FaMoon, FaSun } from "react-icons/fa";
 
 function App() {
   const [open, setOpen] = useState(false);
   const [slide, setSlide] = useState(false);
+  const [dark, setDark] = useState(false);
 
   //slide nav modal
   const openModal = () => {
@@ -31,9 +32,20 @@ function App() {
       : (document.body.style.overflow = "auto");
   }
 
+  const darkTheme = () => {
+    setDark(() => !dark);
+  };
+
+  document.body.className = `${dark && "light-theme"}`;
+
   return (
-    <div className="App">
+    <div className={`App`}>
       <Nav open={open} slide={slide} func={setOpen} openModal={openModal} />
+      {dark ? (
+        <FaSun className="dark-mode" onClick={darkTheme} />
+      ) : (
+        <FaMoon className="dark-mode" onClick={darkTheme} />
+      )}
       <header>
         {!open ? (
           <FaBars className="bar" onClick={openModal} />
