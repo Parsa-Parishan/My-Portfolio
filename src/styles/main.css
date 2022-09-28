@@ -154,7 +154,7 @@ body #root .App {
   aspect-ratio: 1;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 770px) {
   .mobile-logo {
     display: none;
   }
@@ -499,6 +499,18 @@ a:visited {
   place-items: center;
   padding: 1.5rem;
   height: 100vh;
+}
+
+@media (min-width: 765px) {
+  .about-me {
+    margin-top: 3.5rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .about-me {
+    margin-top: initial;
+  }
 }
 
 .about-me .intro {
