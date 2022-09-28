@@ -40,7 +40,9 @@ export default function Nav({ open, slide, func, openModal }) {
           className={`horizontal-container ${slide ? "slide" : "slide-back"}`}
         >
           <div className="avatar-logo">
-            <img src={logo} alt="Avatar" />
+            <a href="#">
+              <img src={logo} alt="Avatar" />
+            </a>
           </div>
           <div className="links">
             <ul>
