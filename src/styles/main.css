@@ -205,9 +205,17 @@ a:visited {
   --background-color: #e3e2df;
   --nav-background: #a27b5c;
   --nav-font: #2c3639;
-  --icon: #2c3639;
-  --font: #5f7161;
-  --hover: #809a6f;
+  --icon: rgba(208, 44, 74);
+  --font: black;
+  --hover: #5d001e;
+  --item-background: #c3073f;
+  --h3: black;
+  --tech: white;
+  --btn: white;
+  --footer-a: #6f2232;
+  --greet-h1: #ee4c7c;
+  --greet-span: rgba(245, 49, 78);
+  --greet-p: black;
 }
 
 @-webkit-keyframes negative-slider {
@@ -521,7 +529,7 @@ a:visited {
   font-family: "League Spartan", sans-serif;
   -webkit-text-decoration: underline var(--greet-span);
           text-decoration: underline var(--greet-span);
-  color: var(--h3);
+  color: var(--h3) !important;
 }
 
 .about-me .intro strong {

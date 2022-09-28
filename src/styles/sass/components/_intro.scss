@@ -19,7 +19,7 @@
         span {
           font-family: "League Spartan", sans-serif;
           text-decoration: underline var(--greet-span);
-          color: var(--h3);
+          color: var(--h3) !important;
         }
       }
       position: relative;

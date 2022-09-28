@@ -8,7 +8,7 @@ import { FaBars, FaRegTimesCircle, FaMoon, FaSun } from "react-icons/fa";
 function App() {
   const [open, setOpen] = useState(false);
   const [slide, setSlide] = useState(false);
-  const [dark, setDark] = useState(false);
+  // const [dark, setDark] = useState(false);
 
   //slide nav modal
   const openModal = () => {
@@ -32,20 +32,20 @@ function App() {
       : (document.body.style.overflow = "auto");
   }
 
-  const darkTheme = () => {
-    setDark(() => !dark);
-  };
+  // const darkTheme = () => {
+  //   setDark(() => !dark);
+  // };
 
-  document.body.className = `${dark && "light-theme"}`;
+  // document.body.className = `${dark && "light-theme"}`;
 
   return (
     <div className={`App`}>
       <Nav open={open} slide={slide} func={setOpen} openModal={openModal} />
-      {dark ? (
+      {/* {dark ? (
         <FaSun className="dark-mode" onClick={darkTheme} />
       ) : (
         <FaMoon className="dark-mode" onClick={darkTheme} />
-      )}
+      )} */}
       <header>
         {!open ? (
           <FaBars className="bar" onClick={openModal} />
