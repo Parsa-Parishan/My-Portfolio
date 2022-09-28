@@ -655,7 +655,7 @@ main .my-portfolio .container article .about-project {
   padding: 0.5rem;
   width: 100%;
   height: 100%;
-  color: var(--nav-font);
+  color: #657b81;
   background: rgba(0, 0, 0, 0.8);
 }
 
