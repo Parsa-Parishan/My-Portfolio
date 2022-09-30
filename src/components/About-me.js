@@ -12,10 +12,22 @@ export default function About() {
         <div className="my-info">
           <h3>Hello!</h3>
           <p>
-            My name is Parsa and I'm a front end developer. I'm pursing the
-            opportunity to jump-start my career in web development. I'm
-            currently focusing on improving my skills as a front-end developer
-            and gradually starting to shift toward Full-stack
+            {/* My name is Parsa and I'm a front end developer. I'm currently
+            focusing on improving my skills as a front-end developer and
+            expanding my skills as I'm gradually starting to shift toward
+            Full-stack. My goal is to pursue becoming a professional and join a
+            company where I can showcase my skills and grow as a developer. */}
+            My name is Parsa and I enjoy building things on the web. My interest
+            in web development started in 2021 when I got introduced to
+            Blockchain and becoming a block chain developer and web development
+            was a prerequisite. I started building simple HTML and CSS projects
+            and decided that it's something I want to pursue professionally.
+            <br />
+            I'm currently focusing on improving my skills as a front-end
+            developer and expanding my skills as I'm gradually starting to shift
+            toward Full-stack. My goal is to pursue becoming a professional and
+            join a company where I can showcase my skills and grow as a
+            developer.
           </p>
         </div>
       </div>
