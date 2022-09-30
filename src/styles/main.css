@@ -294,7 +294,7 @@ a:visited {
   display: none;
 }
 
-.horizontal .horizontal-container .links > ul > li {
+.horizontal .horizontal-container .links > ul > li, .horizontal .horizontal-container a {
   margin-inline: 20px;
   font-size: 1.25rem;
   text-decoration: none;
@@ -305,26 +305,26 @@ a:visited {
   cursor: pointer;
 }
 
-.horizontal .horizontal-container .links > ul > li:hover {
+.horizontal .horizontal-container .links > ul > li:hover, .horizontal .horizontal-container a:hover {
   color: var(--hover);
   -webkit-transition: color 0.15s linear;
   transition: color 0.15s linear;
 }
 
-.horizontal .horizontal-container .links > ul > li.resume {
+.horizontal .horizontal-container .links > ul > li.resume, .horizontal .horizontal-container a.resume {
   border: 1px solid;
   border-radius: 10px;
   color: var(--hover);
 }
 
-.horizontal .horizontal-container .links > ul > li.resume:hover {
+.horizontal .horizontal-container .links > ul > li.resume:hover, .horizontal .horizontal-container a.resume:hover {
   background-color: rgba(246, 9, 80, 0.25);
   -webkit-transition: background-color 0.15s linear;
   transition: background-color 0.15s linear;
 }
 
 @media (max-width: 768px) {
-  .horizontal .horizontal-container .links > ul > li {
+  .horizontal .horizontal-container .links > ul > li, .horizontal .horizontal-container a {
     display: block;
   }
 }

@@ -48,11 +48,10 @@ export default function Nav({ open, slide, func, openModal }) {
             <ul>
               <li onClick={() => scrollTo("#about-me")}>About</li>
               <li onClick={() => scrollTo("#contact")}>Contact</li>
-              <li className="resume">
-                <a href={Resume} target="_blank">
-                  Resume
-                </a>
-              </li>
+
+              <a href={Resume} target="_blank" className="resume">
+                Resume
+              </a>
             </ul>
           </div>
         </div>
