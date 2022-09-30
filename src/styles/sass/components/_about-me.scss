@@ -23,6 +23,15 @@ main {
     p {
       font-family: "League Spartan", sans-serif;
     }
+    .tools {
+      ul {
+        li {
+          display: inline;
+          margin-right: 1.5rem;
+          font-size: 1.5rem;
+        }
+      }
+    }
   }
   .my-portfolio {
     h2 {
@@ -101,6 +110,9 @@ main {
                 * {
                   color: var(--hover);
                 }
+              }
+              a:visited {
+                color: white !important;
               }
             }
             @media (min-width: 768px) {

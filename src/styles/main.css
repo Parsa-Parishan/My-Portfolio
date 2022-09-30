@@ -624,6 +624,12 @@ main .my-skills p {
   font-family: "League Spartan", sans-serif;
 }
 
+main .my-skills .tools ul li {
+  display: inline;
+  margin-right: 1.5rem;
+  font-size: 1.5rem;
+}
+
 main .my-portfolio {
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
@@ -730,6 +736,10 @@ main .my-portfolio .container article .about-project .btns button:hover {
 
 main .my-portfolio .container article .about-project .btns button:hover * {
   color: var(--hover);
+}
+
+main .my-portfolio .container article .about-project .btns button a:visited {
+  color: white !important;
 }
 
 @media (min-width: 768px) {
