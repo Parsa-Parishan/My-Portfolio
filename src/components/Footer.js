@@ -17,7 +17,10 @@ export default function Footer() {
             </a>
           </li>
           <li className="media">
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/in/parsa-parishan-419117252/"
+              target="_blank"
+            >
               <FaLinkedin />
             </a>
           </li>

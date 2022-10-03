@@ -64,7 +64,12 @@ export default function Nav({ open, slide, func, openModal }) {
             </a>
           </span>
           <span>
-            <FaLinkedin />
+            <a
+              href="https://www.linkedin.com/in/parsa-parishan-419117252/"
+              target="_blank"
+            >
+              <FaLinkedin />
+            </a>
           </span>
           <span>
             <a href="https://www.instagram.com/parsa_parishan/">
