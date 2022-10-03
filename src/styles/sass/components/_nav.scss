@@ -20,7 +20,8 @@
     .close {
       display: none;
     }
-    .links > ul > li, a {
+    .links > ul > li,
+    a {
       margin-inline: 20px;
       font-size: 1.25rem;
       text-decoration: none;
@@ -95,14 +96,17 @@
       font-size: 1.5rem;
       color: var(--nav-font);
       &:hover {
-        color: var(--hover);
         transform: translateY(-0.3rem);
         transition: all 0.15s ease-in-out;
       }
       a {
         color: var(--nav-font);
+        transition: all 0.15s ease-in-out;
         &:visited {
           color: var(--nav-font);
+        }
+        &:hover {
+          color: var(--hover);
         }
       }
     }
