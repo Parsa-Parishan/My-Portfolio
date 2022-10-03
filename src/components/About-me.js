@@ -40,25 +40,25 @@ export default function About() {
           </p>
           <div className="tools">
             <ul>
-              <li>
+              <li className="tool html">
                 <IoLogoHtml5 />
               </li>
-              <li>
+              <li className="tool css">
                 <IoLogoCss3 />
               </li>
-              <li>
+              <li className="tool javascript">
                 <IoLogoJavascript />
               </li>
-              <li>
+              <li className="tool sass">
                 <IoLogoSass />
               </li>
-              <li>
+              <li className="tool github">
                 <IoLogoGithub />
               </li>
-              <li>
+              <li className="tool react">
                 <IoLogoReact />
               </li>
-              <li>
+              <li className="tool bootstrap">
                 <BsFillBootstrapFill />
               </li>
             </ul>

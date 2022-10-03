@@ -30,6 +30,45 @@ main {
           margin-right: 1.5rem;
           font-size: 1.5rem;
         }
+        .tool {
+          transition: all 0.1s linear;
+          cursor: pointer;
+        }
+        .html {
+          &:hover {
+            color: rgb(204, 85, 51);
+          }
+        }
+        .css {
+          &:hover {
+            color: rgb(47, 74, 213);
+          }
+        }
+        .javascript {
+          &:hover {
+            color: rgb(229, 213, 101);
+          }
+        }
+        .sass {
+          &:hover {
+            color: rgb(186, 105, 147);
+          }
+        }
+        .github {
+          &:hover {
+            color: black;
+          }
+        }
+        .react {
+          &:hover {
+            color: rgb(126, 208, 239);
+          }
+        }
+        .bootstrap {
+          &:hover {
+            color: rgb(79, 60, 116);
+          }
+        }
       }
     }
   }
