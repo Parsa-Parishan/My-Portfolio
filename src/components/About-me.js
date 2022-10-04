@@ -28,7 +28,7 @@ export default function About() {
             company where I can showcase my skills and grow as a developer. */}
             My name is Parsa and I enjoy building things on the web. My interest
             in web development started in 2021 when I got introduced to
-            Blockchain and becoming a block chain developer and web development
+            Blockchain and becoming a Blockchain developer and web development
             was a prerequisite. I started building simple HTML and CSS projects
             and decided that it's something I want to pursue professionally.
             <br />
