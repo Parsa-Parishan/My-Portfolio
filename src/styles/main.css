@@ -260,10 +260,12 @@ a:visited {
   }
 }
 
-.reveal {
-  -webkit-transform: translateX(0) !important;
-          transform: translateX(0) !important;
-  opacity: 1 !important;
+@media (min-width: 768px) {
+  .reveal {
+    -webkit-transform: translateX(0) !important;
+            transform: translateX(0) !important;
+    opacity: 1 !important;
+  }
 }
 
 .horizontal {
@@ -725,6 +727,7 @@ main .my-portfolio .container article .about-project {
   height: 100%;
   color: #657b81;
   background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
 }
 
 main .my-portfolio .container article .about-project h3 {

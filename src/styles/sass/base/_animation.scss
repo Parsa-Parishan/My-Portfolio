@@ -19,7 +19,9 @@
   }
 }
 
-.reveal {
-  transform: translateX(0) !important;
-  opacity: 1 !important;
+@media (min-width: 768px) {
+  .reveal {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+  }
 }
