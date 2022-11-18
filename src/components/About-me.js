@@ -83,8 +83,8 @@ export default function About() {
       <div className="my-portfolio">
         <h2>Projects I've built</h2>
         <p>
-          A small gallery of my personal projects I built on my journey of
-          learning to code
+          A small gallery of my personal projects that I've built on my journey
+          of learning to code
         </p>
         <div className="container">
           <article className="project weather">
