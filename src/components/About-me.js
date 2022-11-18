@@ -91,10 +91,10 @@ export default function About() {
             <div className={`about-project ${reveal}`}>
               <h3>Current weather/forecast app</h3>
               <p>
-                A web app for weather. A paginate search bar with city
-                recommendations, search for a city, view a full detailed current
-                weather along with the forecast and a dynamic background based
-                on weather
+                A weather forecast app, showing current weather and the next
+                five days. The app utilizes Weather API and GEO API for the
+                cities data. With implemented async pagination for a better user
+                experience with city suggestions.
               </p>
               <span>
                 <ul>
@@ -131,8 +131,8 @@ export default function About() {
             <div className={`about-project ${reveal}`}>
               <h3>Note taking app</h3>
               <p>
-                A note taking app. Just a simple note taking app I created using
-                React js and number of React packages to make editable notes.
+                Note Taking app built in React JS. The main function of this app
+                is creating notes, editing notes and deleting notes.
               </p>
               <span>
                 <ul>
@@ -165,10 +165,10 @@ export default function About() {
             <div className={`about-project ${reveal}`}>
               <h3>Ecommerce website</h3>
               <p>
-                I built a ecommerce website for vintage clothes with React-js
-                and React-router. I got the data from one of my favorite
-                websites <a href="https://madeworn.com/">madeworn</a>. I used
-                framer-motion for transition between components.
+                E-commerce website for vintage clothes. Integrated shopping cart
+                to the web app, cart summary and preview. A list of products and
+                utilized React Router for each page such as login, create
+                account and a page for each product.
               </p>
               <span>
                 <ul>
