@@ -1,6 +1,6 @@
 .horizontal {
   width: 100%;
-  padding: 10px 15px;
+  padding-inline: 15px;
   top: -100px;
   transition: all 0.2s ease-in-out;
   position: fixed;
@@ -30,6 +30,7 @@
       list-style: none;
       display: inline;
       cursor: pointer;
+      line-height: normal;
       &:hover {
         color: var(--hover);
         transition: color 0.15s linear;

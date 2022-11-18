@@ -270,7 +270,7 @@ a:visited {
 
 .horizontal {
   width: 100%;
-  padding: 10px 15px;
+  padding-inline: 15px;
   top: -100px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -312,6 +312,7 @@ a:visited {
   list-style: none;
   display: inline;
   cursor: pointer;
+  line-height: normal;
 }
 
 .horizontal .horizontal-container .links > ul > li:hover,
