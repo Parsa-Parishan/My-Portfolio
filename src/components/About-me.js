@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import {
   IoLogoHtml5,
@@ -14,6 +14,21 @@ import note from "../images/screenshots/note.png";
 import ecom from "../images/screenshots/ecom.png";
 
 export default function About() {
+  const [reveal, setReaveal] = useState(false);
+
+  const toReaveal = () => {
+    let windowHeight = window.innerHeight;
+    const revealTop = document
+      .querySelector("article")
+      .getBoundingClientRect().top;
+    const revealPoint = 150;
+    if (revealTop < windowHeight - revealPoint) {
+      setReaveal(() => "reveal");
+    } else {
+      setReaveal(() => false);
+    }
+  };
+  window.onscroll = () => toReaveal();
   return (
     <>
       <div className="my-skills" id="about-me">
@@ -73,7 +88,7 @@ export default function About() {
         </p>
         <div className="container">
           <article className="project weather">
-            <div className="about-project">
+            <div className={`about-project ${reveal}`}>
               <h3>Current weather/forecast app</h3>
               <p>
                 A web app for weather. A paginate search bar with city
@@ -107,13 +122,13 @@ export default function About() {
                 </button>
               </div>
             </div>
-            <div className="image">
+            <div className={`image ${reveal}`}>
               <div className="filter"></div>
               <img src={weather} alt="weather app" />
             </div>
           </article>
           <article className="project note">
-            <div className="about-project">
+            <div className={`about-project ${reveal}`}>
               <h3>Note taking app</h3>
               <p>
                 A note taking app. Just a simple note taking app I created using
@@ -141,13 +156,13 @@ export default function About() {
                 </button>
               </div>
             </div>
-            <div className="image">
+            <div className={`image ${reveal}`}>
               <div className="filter"></div>
               <img src={note} alt="note taking app" />
             </div>
           </article>
           <article className="project ecommerce">
-            <div className="about-project">
+            <div className={`about-project ${reveal}`}>
               <h3>Ecommerce website</h3>
               <p>
                 I built a ecommerce website for vintage clothes with React-js
@@ -178,7 +193,7 @@ export default function About() {
                 </button>
               </div>
             </div>
-            <div className="image">
+            <div className={`image ${reveal}`}>
               <div className="filter"></div>
               <img src={ecom} alt="ecommerce website" />
             </div>

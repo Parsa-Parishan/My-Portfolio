@@ -260,6 +260,12 @@ a:visited {
   }
 }
 
+.reveal {
+  -webkit-transform: translateX(0) !important;
+          transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+
 .horizontal {
   width: 100%;
   padding: 10px 15px;
@@ -815,6 +821,11 @@ main .my-portfolio .container article .about-project .btns button a:visited {
     z-index: 3;
     margin-left: 1.5rem;
     background: none;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
   }
   main .my-portfolio .container article .about-project p {
     background: rgba(0, 0, 0, 0.8);
@@ -834,8 +845,11 @@ main .my-portfolio .container article .about-project .btns button a:visited {
     width: 100%;
     position: relative;
     z-index: 2;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
   }
   main .my-portfolio .container article .image .filter {
     position: absolute;
@@ -857,11 +871,15 @@ main .my-portfolio .container article .about-project .btns button a:visited {
     -ms-grid-column: 5;
     -ms-grid-column-span: 3;
     grid-column: 5 / 8;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   main .my-portfolio .container article.note .image {
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
     grid-column: 1 / 6;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 
