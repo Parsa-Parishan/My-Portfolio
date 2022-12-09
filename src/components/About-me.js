@@ -8,6 +8,7 @@ import {
   IoLogoGithub,
   IoLogoReact,
 } from "react-icons/io5";
+import { SiJquery } from "react-icons/si";
 import { BsFillBootstrapFill } from "react-icons/bs";
 import weather from "../images/screenshots/weather.png";
 import note from "../images/screenshots/note.png";
@@ -75,6 +76,9 @@ export default function About() {
               </li>
               <li className="tool bootstrap">
                 <BsFillBootstrapFill />
+              </li>
+              <li className="tool jquery">
+                <SiJquery />
               </li>
             </ul>
           </div>
