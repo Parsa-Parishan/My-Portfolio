@@ -690,6 +690,10 @@ main .my-skills .tools ul .bootstrap:hover {
   color: #4f3c74;
 }
 
+main .my-skills .tools ul .jquery:hover {
+  color: #2e66a6;
+}
+
 main .my-portfolio {
   -webkit-transition: all 2s ease;
   transition: all 2s ease;

@@ -69,6 +69,11 @@ main {
             color: rgb(79, 60, 116);
           }
         }
+        .jquery {
+          &:hover {
+            color: rgb(46, 102, 166);
+          }
+        }
       }
     }
   }
