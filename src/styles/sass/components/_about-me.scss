@@ -95,6 +95,7 @@ main {
       display: grid;
       gap: 1rem;
       grid-template-rows: repeat(3, 20rem);
+      overflow-x: hidden;
       article {
         position: relative;
         font-family: "Orbitron", sans-serif;

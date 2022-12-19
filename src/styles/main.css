@@ -717,6 +717,7 @@ main .my-portfolio .container {
   gap: 1rem;
   -ms-grid-rows: (20rem)[3];
       grid-template-rows: repeat(3, 20rem);
+  overflow-x: hidden;
 }
 
 main .my-portfolio .container article {
