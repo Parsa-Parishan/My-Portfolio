@@ -653,7 +653,7 @@ main .my-skills p {
 main .my-skills .tools ul li {
   display: inline;
   margin-right: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 main .my-skills .tools ul .tool {
@@ -908,6 +908,10 @@ main .my-portfolio .container article .about-project .btns button a:visited {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
+}
+
+.my-info p {
+  font-size: 1.5rem;
 }
 
 footer {

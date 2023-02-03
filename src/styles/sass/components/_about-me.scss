@@ -28,7 +28,7 @@ main {
         li {
           display: inline;
           margin-right: 1.5rem;
-          font-size: 1.5rem;
+          font-size: 2rem;
         }
         .tool {
           transition: all 0.1s linear;
@@ -249,4 +249,10 @@ main {
 .active {
   transform: translateY(0);
   opacity: 1;
+}
+
+.my-info {
+  p {
+    font-size: 1.5rem;
+  }
 }
