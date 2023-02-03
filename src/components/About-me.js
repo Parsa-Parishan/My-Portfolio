@@ -42,17 +42,9 @@ export default function About() {
             expanding my skills as I'm gradually starting to shift toward
             Full-stack. My goal is to pursue becoming a professional and join a
             company where I can showcase my skills and grow as a developer. */}
-            My name is Parsa and I enjoy building things on the web. My interest
-            in web development started in 2021 when I got introduced to
-            Blockchain and becoming a Blockchain developer and web development
-            was a prerequisite. I started building simple HTML and CSS projects
-            and decided that it's something I want to pursue professionally.
+           Hi, I’m Parsa and I’m a Web Developer with two years of experience. I’m currently working with a small team at WebDev Canada. I help create and maintain components. I work on the Front-End side of things. My daily stack consists of React.Js, React router, Redux.js, and Sass.
             <br />
-            I'm currently focusing on improving my skills as a front-end
-            developer and expanding my skills as I'm gradually starting to shift
-            toward Full-stack. My goal is to pursue becoming a professional and
-            join a company where I can showcase my skills and grow as a
-            developer.
+            I also work on my projects to hone and expand my skills. I’m currently learning Back-End development to gradually shift toward Full-stack.
           </p>
           <div className="tools">
             <ul>
