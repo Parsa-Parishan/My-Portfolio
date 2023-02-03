@@ -42,9 +42,14 @@ export default function About() {
             expanding my skills as I'm gradually starting to shift toward
             Full-stack. My goal is to pursue becoming a professional and join a
             company where I can showcase my skills and grow as a developer. */}
-           Hi, I’m Parsa and I’m a Web Developer with two years of experience. I’m currently working with a small team at WebDev Canada. I help create and maintain components. I work on the Front-End side of things. My daily stack consists of React.Js, React router, Redux.js, and Sass.
-            <br />
-            I also work on my projects to hone and expand my skills. I’m currently learning Back-End development to gradually shift toward Full-stack.
+            Hi, I’m Parsa and I’m a Web Developer with two years of experience.
+            I’m currently working with a small team at WebDev Canada. I help
+            create and maintain components. I work on the Front-End side of
+            things. My daily stack consists of React.Js, React router, Redux.js,
+            and Sass.
+            <br />I also work on my projects to hone and expand my skills. I’m
+            currently learning Back-End development to gradually shift toward
+            Full-stack.
           </p>
           <div className="tools">
             <ul>
@@ -78,9 +83,9 @@ export default function About() {
       </div>
       <div className="my-portfolio">
         <h2>Projects I've built</h2>
+        <br />
         <p>
-          A small gallery of my personal projects that I've built on my journey
-          of learning to code
+          A small gallery of projects that I've built
         </p>
         <div className="container">
           <article className="project weather">
@@ -127,8 +132,8 @@ export default function About() {
             <div className={`about-project ${reveal}`}>
               <h3>Note taking app</h3>
               <p>
-                Note Taking app built in React JS. The main function of this app
-                is creating notes, editing notes and deleting notes.
+              Note Taking app is built in React JS. The main function of this app
+is creating notes, editing notes and deleting notes.
               </p>
               <span>
                 <ul>
@@ -161,10 +166,10 @@ export default function About() {
             <div className={`about-project ${reveal}`}>
               <h3>Ecommerce website</h3>
               <p>
-                E-commerce website for vintage clothes. Integrated shopping cart
-                to the web app, cart summary and preview. A list of products and
-                utilized React Router for each page such as login, create
-                account and a page for each product.
+              E-commerce website for vintage clothes. Integrated shopping cart
+               to the web app, cart summary, and preview. A list of products and
+               utilized React Router for each page such as login, creating
+               An account, and a page for each product.
               </p>
               <span>
                 <ul>
