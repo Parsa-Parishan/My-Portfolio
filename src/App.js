@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import About from "./components/About-me";
 import Footer from "./components/Footer";
 import { FaBars, FaRegTimesCircle, FaMoon, FaSun } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -46,14 +47,29 @@ function App() {
       ) : (
         <FaMoon className="dark-mode" onClick={darkTheme} />
       )} */}
-      <header>
+      <motion.header
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          default: {
+            duration: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+          },
+          scale: {
+            type: "spring",
+            damping: 3,
+            stiffness: 100,
+            restDelta: 0.001,
+          },
+        }}
+      >
         {!open ? (
           <FaBars className="bar" onClick={openModal} />
         ) : (
           <FaRegTimesCircle className="bar" onClick={openModal} />
         )}
         <Header />
-      </header>
+      </motion.header>
       <main>
         <About />
       </main>

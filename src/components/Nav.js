@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import logo from "../images/logo.png";
 import Resume from "../resume/Resume.pdf";
+import { motion } from "framer-motion";
 
 export default function Nav({ open, slide, func, openModal }) {
   const [showNav, setShowNav] = useState(true);
@@ -56,7 +57,23 @@ export default function Nav({ open, slide, func, openModal }) {
           </div>
         </div>
       </nav>
-      <nav className="vertical">
+      <motion.nav
+        className="vertical"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          default: {
+            duration: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+          },
+          scale: {
+            type: "spring",
+            damping: 3,
+            stiffness: 100,
+            restDelta: 0.001,
+          },
+        }}
+      >
         <div className="icon">
           <span>
             <a href="https://github.com/Parsa-Parishan">
@@ -82,7 +99,7 @@ export default function Nav({ open, slide, func, openModal }) {
             </a>
           </span>
         </div>
-      </nav>
+      </motion.nav>
     </>
   );
 }

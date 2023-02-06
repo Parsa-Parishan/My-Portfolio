@@ -8,7 +8,7 @@ import {
   IoLogoGithub,
   IoLogoReact,
 } from "react-icons/io5";
-import { SiJquery } from "react-icons/si";
+import { SiJquery, SiRedux } from "react-icons/si";
 import { BsFillBootstrapFill } from "react-icons/bs";
 import weather from "../images/screenshots/weather.png";
 import note from "../images/screenshots/note.png";
@@ -77,6 +77,9 @@ export default function About() {
               <li className="tool jquery">
                 <SiJquery />
               </li>
+              <li className="tool redux">
+                <SiRedux />
+              </li>
             </ul>
           </div>
         </div>
@@ -84,9 +87,7 @@ export default function About() {
       <div className="my-portfolio">
         <h2>Projects I've built</h2>
         <br />
-        <p>
-          A small gallery of projects that I've built
-        </p>
+        <p>A small gallery of projects that I've built</p>
         <div className="container">
           <article className="project weather">
             <div className={`about-project ${reveal}`}>
@@ -132,8 +133,8 @@ export default function About() {
             <div className={`about-project ${reveal}`}>
               <h3>Note taking app</h3>
               <p>
-              Note Taking app is built in React JS. The main function of this app
-is creating notes, editing notes and deleting notes.
+                Note Taking app is built in React JS. The main function of this
+                app is creating notes, editing notes and deleting notes.
               </p>
               <span>
                 <ul>
@@ -166,10 +167,10 @@ is creating notes, editing notes and deleting notes.
             <div className={`about-project ${reveal}`}>
               <h3>Ecommerce website</h3>
               <p>
-              E-commerce website for vintage clothes. Integrated shopping cart
-               to the web app, cart summary, and preview. A list of products and
-               utilized React Router for each page such as login, creating
-               An account, and a page for each product.
+                E-commerce website for vintage clothes. Integrated shopping cart
+                to the web app, cart summary, and preview. A list of products
+                and utilized React Router for each page such as login, creating
+                An account, and a page for each product.
               </p>
               <span>
                 <ul>
